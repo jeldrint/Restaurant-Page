@@ -9,22 +9,52 @@ body{
 #content{
     width: 100vw;
     height: 100vh;
-    background: url('meryenda.jpg');
+    background: url('meryenda3.webp');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size:cover;
 }
 
 /*HEADER*/
 .page-header{
-    background-color: rgba(200, 200, 200, 0.8);
-    height: 200px;
+    background-color: rgba(33, 33, 33, 0.4);
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding-top: 50px;
+    padding-bottom: 15px;
+    row-gap: 20px;
 }
 
 .text-header{
     color: goldenrod;
     font-size: 54px;
     font-family: Pacifico, sans-serif;
+    cursor: pointer;
+    transition: 0.15s;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.menu-header{
+    margin: 0;
+    list-style-type: none;
+    font-family: Pacifico, sans-serif;
+    color: goldenrod;
+    display: flex;
+    column-gap: 30px;
+    cursor: pointer;
+}
+
+.menu-header >li {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 0.15s;
+}
+
+.menu-header > li:hover, .text-header:hover{
+    background-color:goldenrod;
+    color:rgba(29, 29, 28, 0.5);
 }
