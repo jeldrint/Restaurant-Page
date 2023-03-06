@@ -5,10 +5,26 @@ body{
     margin: 0;
     padding: 0;
 }
+
 #content{
     width: 100vw;
     height: 100vh;
     background: url('meryenda.jpg');
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+/*HEADER*/
+.page-header{
+    background-color: rgba(200, 200, 200, 0.8);
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text-header{
+    color: goldenrod;
+    font-size: 54px;
+    font-family: Pacifico, sans-serif;
 }

@@ -8,19 +8,18 @@ const homePage = () => {
 const homePageHeader = () => {
     const container = document.querySelector('#content');
     const header = document.createElement('div');
+    header.className = 'page-header';
+
     const textHeader = document.createElement('span');
-
-    
+    textHeader.className = 'text-header';
     textHeader.innerText = "Meryenda ni Mami";
-    header.style.backgroundColor = 'rgba(200,200,200,0.8)';
-    textHeader.style.color = 'goldenrod';
-    textHeader.style.fontSize = '54px';
-    header.style.textAlign = 'center';
-    textHeader.style.fontFamily = 'Pacifico, sans-serif'
 
-    header.style.height = '200px'
+    const menuHeader = document.createElement('ul');
+    menuHeader.className = 'menu-header';
+    const menuItems = document.createElement('li');
+    menuItems.cr
+
     container.appendChild(header);
     header.appendChild(textHeader);
-
 }
 export default homePage;
