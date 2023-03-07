@@ -17,12 +17,12 @@ const homePageHeader = () => {
     textHeader.innerText = "Meryenda ni Mami";
     header.appendChild(textHeader);
 
-    const menuHeader = document.createElement('ul');
+    const menuHeader = document.createElement('div');
     menuHeader.className = 'menu-header';
     header.appendChild(menuHeader);
     
     for (let i=0; i<3; i++){
-        let x = document.createElement('li')
+        let x = document.createElement('button')
         menuHeader.appendChild(x);
         
         switch (i){
@@ -57,6 +57,12 @@ const homePageBody = () => {
     }else{
         body = document.querySelector('.page-body');
     }
+
+    body.style.display = 'flex';
+    body.style.flexDirection = 'column';
+    body.style.alignItems = 'center';
+
+
     const upperBodyText = document.createElement('div');
     upperBodyText.className = 'body-text';
     const lowerBodyText = document.createElement('div');

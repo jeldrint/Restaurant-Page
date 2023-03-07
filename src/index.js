@@ -9,6 +9,7 @@ const mainPage = () =>{
     const body = document.querySelector('.page-body');
     
     tabSelector.addEventListener('click', e =>{
+
         switch (e.target){
             case tabSelector.children[0]:
                 remover();
@@ -16,7 +17,7 @@ const mainPage = () =>{
                 break;
             case tabSelector.children[1]:
                 remover();
-                //menu();
+                menu();
                 break;
             case tabSelector.children[2]:
                 console.log('Lets go contact');

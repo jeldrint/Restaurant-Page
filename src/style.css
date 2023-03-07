@@ -39,28 +39,30 @@ body{
 
 .menu-header{
     margin: 0;
-    list-style-type: none;
-    font-family: Pacifico, sans-serif;
-    color: goldenrod;
     display: flex;
-    column-gap: 30px;
-    cursor: pointer;
+    column-gap: 50px;
 }
 
-.menu-header >li {
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 18px;
+.menu-header >button {
+    padding: 10px;
+    border-radius: 5px 20px;
+    font-family: Pacifico, sans-serif;
+    font-size: 21px;
+    color: goldenrod;
     transition: 0.15s;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
 }
 
-.menu-header > li:hover {
+.menu-header > button:hover {
     background-color:goldenrod;
     color:rgba(29, 29, 28, 0.8);
 }
 
-.menu-header > li:focus {
-    background-color:aliceblue;
+.menu-header > button:focus{
+    background-color:goldenrod;
     color:rgba(29, 29, 28, 0.8);
 }
 
@@ -82,9 +84,6 @@ body{
 
     align-self: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-width: 500px;
     max-width: 800px;
     row-gap: 30px;
@@ -92,9 +91,16 @@ body{
 
 .mami-pic{
     border-radius: 15px;
+    filter: sepia(60%);
 }
 
 .body-text{
     text-align: center;
     font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+/*BODY - MENU*/
+.menu-item{
+    border: solid 1px aliceblue;
 }
