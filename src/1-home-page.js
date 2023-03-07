@@ -1,7 +1,9 @@
-import Background from './meryenda.jpg';
+import Icon from './mama-pic.jpg';
 
 const homePage = () => {
     homePageHeader();
+    homePageBody();
+    homePageFooter();
 }
 
 const homePageHeader = () => {
@@ -32,5 +34,45 @@ const homePageHeader = () => {
                     break;
         }
     }
+
 }
+
+const homePageFooter = () => {
+    const container = document.querySelector('#content');
+    const footer = document.createElement('div');
+    footer.className = 'page-footer';
+    footer.innerText = 'Copyright \u00A9 2023 jeldrint'
+    footer.style.textAlign = 'center'
+    container.appendChild(footer)
+}
+
+
+const homePageBody = () => {
+    const container = document.querySelector('#content');
+    let body = "";
+    if(container.children[1] == undefined){
+        body = document.createElement('div');
+        body.className = 'page-body';
+        container.appendChild(body);    
+    }else{
+        body = document.querySelector('.page-body');
+    }
+    const upperBodyText = document.createElement('div');
+    upperBodyText.className = 'body-text';
+    const lowerBodyText = document.createElement('div');
+    lowerBodyText.className = 'body-text';
+
+    upperBodyText.innerText = "Serving the most delicious meryenda here in Olongapo City!"
+    body.appendChild(upperBodyText);
+
+    const mamaPic = new Image();
+    mamaPic.src = Icon;
+    body.appendChild(mamaPic);
+    mamaPic.className = 'mami-pic';
+
+    lowerBodyText.innerText = "Feel free to explore our website for our Menu and Contact. \n Serving Olongapo City since 2023."
+    body.appendChild(lowerBodyText);
+}
+
 export default homePage;
+export {homePageHeader,homePageFooter,homePageBody};

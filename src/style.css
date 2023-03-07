@@ -7,11 +7,12 @@ body{
 }
 
 #content{
-    width: 100vw;
-    height: 100vh;
     background: url('meryenda3.webp');
     background-repeat: no-repeat;
     background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*HEADER*/
@@ -22,9 +23,8 @@ body{
     align-items: center;
     justify-content: flex-end;
 
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 15px;
-    row-gap: 20px;
 }
 
 .text-header{
@@ -54,7 +54,47 @@ body{
     transition: 0.15s;
 }
 
-.menu-header > li:hover, .text-header:hover{
+.menu-header > li:hover {
     background-color:goldenrod;
-    color:rgba(29, 29, 28, 0.5);
+    color:rgba(29, 29, 28, 0.8);
+}
+
+.menu-header > li:focus {
+    background-color:aliceblue;
+    color:rgba(29, 29, 28, 0.8);
+}
+
+/* FOOTER */
+.page-footer{
+    background-color:rgba(29, 29, 28, 0.8);
+    color: goldenrod;
+    padding: 10px;
+}
+
+/*BODY*/
+.page-body{
+    color:rgb(243, 208, 119);
+    background-color:rgba(29, 29, 28, 0.8);
+    margin: 2% 15%;
+    height: 100%;
+    padding: 5% 5%;
+    border-radius: 20px;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+    max-width: 800px;
+    row-gap: 30px;
+}
+
+.mami-pic{
+    border-radius: 15px;
+}
+
+.body-text{
+    text-align: center;
+    font-size: 18px;
 }
