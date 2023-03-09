@@ -61,7 +61,8 @@ const homePageBody = () => {
     body.style.display = 'flex';
     body.style.flexDirection = 'column';
     body.style.alignItems = 'center';
-
+    body.style.minWidth = '500px';
+    body.style.maxWidth = '800px';
 
     const upperBodyText = document.createElement('div');
     upperBodyText.className = 'body-text';

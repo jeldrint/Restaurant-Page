@@ -1,6 +1,7 @@
 import homePage from './1-home-page.js';
 import {homePageHeader,homePageFooter,homePageBody} from './1-home-page.js'
 import menu from './2-menu.js'
+import Contact from './3-contact.js';
 import './style.css'
 
 const mainPage = () =>{
@@ -20,7 +21,8 @@ const mainPage = () =>{
                 menu();
                 break;
             case tabSelector.children[2]:
-                console.log('Lets go contact');
+                remover();
+                Contact();
                 break;
             default: e.preventDefault();
         }
@@ -30,6 +32,7 @@ const mainPage = () =>{
         while (body.hasChildNodes()){
             body.removeChild(body.firstChild);
         }
+        body.style = 'none';
     }
 }
 

@@ -83,10 +83,8 @@ body{
     border-radius: 20px;
 
     align-self: center;
-
-    min-width: 500px;
-    max-width: 800px;
     row-gap: 30px;
+    column-gap: 30px;
 }
 
 .mami-pic{
@@ -102,5 +100,59 @@ body{
 
 /*BODY - MENU*/
 .menu-item{
+    border: solid 1px rgba(240,248,255,0.7);
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover{
+    background-color: rgba(240,248,255,0.4);
+}
+
+.meryenda{
+    width: 150px;
+    height: 125px;
+}
+
+.meryenda-text{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    color: aliceblue;
+}
+.meryenda-text-header{
+    font-size: 21px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.meryenda-text-body{
+    font-size: 15px;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: italic;
+    letter-spacing: 0.25px;
+}
+.meryenda-text-price{
+    font-size: 15px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 700;
+}
+
+/*CONTACT - MENU*/
+.contact-header{
+    font-size: 30px;
+    font-family: Pacifico, Arial, sans-serif;
+    color: goldenrod;
+}
+.contact-person{
+    border-radius: 10px;
+    padding: 15px 20px;
     border: solid 1px aliceblue;
+    font-size: 21px;
+    letter-spacing: 0.5px;
 }
